@@ -10,6 +10,8 @@
 
 // this is the one line version
 const addingMachine = (first, second) => console.log(first + second);
+console.log(addingMachine);
+console.log(addingMachine());
 
 // addingMachine(5,10);
 
@@ -28,3 +30,7 @@ const subtractMachine = (first, second) => console.log(first - second);
 const calculate = (first, second, machine) => machine(first, second);
 
 calculate(20,10,addingMachine)
+
+calculate(22,7, (first,second) => {
+    console.log(first / second);
+})
